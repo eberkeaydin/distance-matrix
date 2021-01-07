@@ -26,7 +26,7 @@ namespace _2dplane
             Console.ReadLine();
         }
          
-        static double[,] Boyut(int point ,int width, int height )
+        static double[,] SizeOfMatrix(int point ,int width, int height )
         {
             double[,] matrix = new double[point, 2];
             for (int i = 0; i < point ; i++)
@@ -52,7 +52,7 @@ namespace _2dplane
         {
             double[,] distance = new double[point,point];
             double[,] size = new double[point,2];
-            size = Boyut(point, width, height);
+            size = SizeOfMatrix(point, width, height);
               
             for (int i = 0; i < point; i++)
             {
@@ -68,7 +68,7 @@ namespace _2dplane
         static void PrintCoordinat(int point, int width, int height)
         {
             double[,] PrintMatrix = new double[point, 2];
-            PrintMatrix = Boyut(point, width, height);
+            PrintMatrix = SizeOfMatrix(point, width, height);
             Console.Write("Count of point : ");
             Console.Write("\t"+"X value : ");
             Console.WriteLine("\t"+"Y point : ");
